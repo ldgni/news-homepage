@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="News Homepage" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>News Homepage</title>
+  </head>
+  <body
+    class="bg-[#FFFDFA] text-[0.9375rem] font-normal leading-[1.625rem] text-[#5E607A]">
+    <h1 class="sr-only">News Homepage</h1>
+    <header
+      class="container mx-auto flex max-w-[70rem] items-center justify-between px-4 py-8 md:pb-14">
+      <a href="#">
+        <img src="assets/images/logo.svg" alt="W. logo" />
+      </a>
+      <nav>
+        <ul id="navigation-menu" data-visible="false">
+          <li>
+            <a href="#" class="hover:text-[#F15D51] hover:transition-colors">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#F15D51] hover:transition-colors">
+              New
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#F15D51] hover:transition-colors">
+              Popular
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#F15D51] hover:transition-colors">
+              Trending
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#F15D51] hover:transition-colors">
+              Categories
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        aria-controls="navigation-menu"
+        aria-expanded="false"
+        id="navigation-toggle">
+        <span class="sr-only">Menu</span>
+      </button>
+    </header>
+    <main class="container mx-auto max-w-[70rem] px-4 pb-8">
+      <div class="md:mb-[4.5rem] md:grid md:grid-cols-3 md:gap-8">
+        <article class="mb-16 md:col-span-2 md:mb-0">
+          <picture>
+            <source
+              srcset="assets/images/image-web-3-desktop.jpg"
+              media="(min-width: 45rem)" />
+            <img
+              src="assets/images/image-web-3-mobile.jpg"
+              alt="Colorful building blocks"
+              class="mb-4 md:mb-8" />
+          </picture>
+          <div class="md:flex md:gap-8">
+            <h2
+              class="mb-4 text-[2.5rem] font-extrabold leading-10 text-[#00001A] md:mb-0 md:flex-1 md:text-[3.5rem] md:leading-[3.5rem]">
+              The Bright Future of Web 3.0?
+            </h2>
+            <div class="md:flex-1">
+              <p class="mb-6 md:mb-8">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="cursor-pointer bg-[#F15D51] px-8 py-3 text-[0.875rem] font-bold uppercase leading-6 tracking-[0.25rem] text-[#FFFDFA] hover:bg-[#00001A] hover:transition-colors">
+                Read more
+              </button>
+            </div>
+          </div>
+        </article>
+        <section
+          class="mb-16 bg-[#00001A] px-5 py-6 text-[#C5C6CE] md:mb-0 md:px-6 md:py-8">
+          <h3
+            class="mb-8 text-[2rem] font-bold leading-8 text-[#E9AA52] md:text-[2.5rem] md:leading-10">
+            New
+          </h3>
+          <article class="mb-8 border-b-[0.0625rem] border-b-[#5E607A] pb-8">
+            <h4
+              class="mb-2 text-[1.25rem] font-extrabold text-[#FFFDFA] hover:text-[#E9AA52] hover:transition-colors">
+              <a href="#">Hydrogen VS Electric Cars</a>
+            </h4>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+          <article class="mb-8 border-b-[0.0625rem] border-b-[#5E607A] pb-8">
+            <h4
+              class="mb-2 text-[1.25rem] font-extrabold text-[#FFFDFA] hover:text-[#E9AA52] hover:transition-colors">
+              <a href="#">The Downsides of AI Artistry</a>
+            </h4>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <article>
+            <h4
+              class="mb-2 text-[1.25rem] font-extrabold text-[#FFFDFA] hover:text-[#E9AA52] hover:transition-colors">
+              <a href="#">Is VC Funding Drying Up?</a>
+            </h4>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </section>
+      </div>
+      <section class="flex flex-col gap-8 md:grid md:grid-cols-3">
+        <article class="flex gap-6">
+          <img
+            src="assets/images/image-retro-pcs.jpg"
+            alt="Retro PC"
+            class="w-24" />
+          <div>
+            <span
+              class="mb-3 block text-[2rem] font-bold leading-8 text-[#C5C6CE]">
+              01
+            </span>
+            <h4
+              class="mb-2 text-[1.125rem] font-extrabold leading-6 text-[#00001A] hover:text-[#F15D51] hover:transition-colors">
+              <a href="#">Reviving Retro PCs</a>
+            </h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+        <article class="flex gap-6">
+          <img
+            src="assets/images/image-top-laptops.jpg"
+            alt="Laptop keyboard"
+            class="w-24" />
+          <div>
+            <span
+              class="mb-3 block text-[2rem] font-bold leading-8 text-[#C5C6CE]">
+              02
+            </span>
+            <h4
+              class="mb-2 text-[1.125rem] font-extrabold leading-6 text-[#00001A] hover:text-[#F15D51] hover:transition-colors">
+              <a href="#">Top 10 Laptops of 2022</a>
+            </h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article class="flex gap-6">
+          <img
+            src="assets/images/image-gaming-growth.jpg"
+            alt="PS4 controller"
+            class="w-24" />
+          <div>
+            <span
+              class="mb-3 block text-[2rem] font-bold leading-8 text-[#C5C6CE]">
+              03
+            </span>
+            <h4
+              class="mb-2 text-[1.125rem] font-extrabold leading-6 text-[#00001A] hover:text-[#F15D51] hover:transition-colors">
+              <a href="#">The Growth of Gaming</a>
+            </h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
